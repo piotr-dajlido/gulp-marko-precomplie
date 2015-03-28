@@ -1,2 +1,2 @@
 # gulp-marko-precomplie
-Marko optimizer wrapper for Gulp
+Marko-Optimizer wrapper for Gulp
