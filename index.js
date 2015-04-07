@@ -7,13 +7,20 @@ var optimizer = require('optimizer');
 var fs        = require('fs');
 
 var CONFIG = {
-    outputDir:'src',
-    fileNamePrefix:'_',
+    destination: 'build',
+    outputDir:'sources',
+    fileNamePrefix:'source',
     fingerprintsEnabled:false,
     minify:true
 };
 
 module.exports = function(options) {
+
+    CONFIG.destination         = options.destination         || 'build';
+    CONFIG.outputDir           = options.outputDir           || 'sources';
+    CONFIG.fileNamePrefix      = options.prefix              || 'src';
+    CONFIG.fingerprintsEnabled = options.fingerprintsEnabled || false;
+    CONFIG.minify              = options.minify              || true;
 
     var cleanFile = '';
     var scripts   = [];
