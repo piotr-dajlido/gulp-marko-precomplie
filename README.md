@@ -1,2 +1,7 @@
-# gulp-marko-precomplie
-Marko-Optimizer wrapper for Gulp
+# gulp-marko-precomplie ( deep alpha )
+*Marko-Optimizer wrapper for Gulp*
+
+## For plugin testing purposes only.
+
+* entry point : *gulpfile.js*
+* require: *gulp, optimizer, through2*
